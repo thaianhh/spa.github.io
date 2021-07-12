@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+
+   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+
+
+
+
+<style>
+ 
+ .video-background video{
+    /* padding-top: 100px; */
+    background-size: cover;
+    width: 100%;
+    max-height: 60vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.carousel-caption {
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.container1 {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding-left: 200px;
+  padding-top: 20px;
+}
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 2px ;
+  display: flex;
+
+
+
+}
+
+/* Add padding BETWEEN each column (if you want) */
+
+.row > .column {
+  padding: 25px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+ 
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  color: grey;
+
+
+}
+
+.container {
+  padding-top: 10px;
+
+}
+ /* ROW 2 */
+ .row1 {
+  display: flex;
+
+ }
+ /* buttons */
+ .readmore {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+ .readmore {background-color:  #008080;} /* Green */
+ .readmore:hover {background-color: #006666
+;}
+  .readmore {
+    width: 100%;
+ 
+
+  }
+  .row2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: space-betwen;
+  }
+  .button {
+  border-radius: 4px;
+  background-color: #F8F8FF;
+  border: none;
+  color: #008080;
+  text-align: center;
+  font-size: 18px;
+  padding: 6px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.row img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 5px;
+  }
+ 
+
+ h2 { font-family: 'DM Serif Display', serif;
+}
+h5 { font-family: 'Lora', serif; }
+h6 { font-family: 'DM Serif Display', serif; }
+p { font-family: 'Lora', serif; }
+
+
+
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: Teal;
+  color: white;
+ display: flex;
+ flex-direction: row;
+  justify-content: space-between ;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+/*.row{
+ 
+    text-align: center;
+}*/
+/* Style the icon bar links */
+.icon-bar a {
+  
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 12px;
+  width: 20px;
+  border-radius: 50px;
+  padding-top: 5px;
+
+  
+
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white; 
+}
+
+
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+  <!--  Navbar -->
+
+
+
+
+  <nav class="navbar navbar-expand-sm navbar-light" style="background-color: Teal; ">
+
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="index.html">
+    <img src="C:/Users/ThaiAnh/Desktop/coding/nabelogo.jpg" style="width: 7%;">
+  </a>
+  
+  <!-- Links -->
+
+  <ul class="navbar-nav ml-auto" style="padding-right: 30px; ">   
+
+
+   <li class="nav-item">
+      <a class="nav-link" href="index.html"style="color: white;">Home</a>
+    </li>
+ 
+
+    <li class="nav-item">
+      <a class="nav-link" href=""style="color: white;">About Us</a>
+    </li>
+
+
+    <li class="nav-item">
+      <a class="nav-link" href="Spa service.html"style="color: white;">Services</a>
+    </li>
+
+  
+
+   
+
+  </ul>
+</nav>
+
+<br><br><br>
+
+<div class="row1"  >
+  
+
+  <div class="column2" style="padding-left: 900px; padding-right:200px;">
+    <div class="container2"> 
+       <img src="C:/Users/ThaiAnh/Desktop/coding/nabelogo.jpg" style="width: 100px;padding-bottom: 20px ">
+      
+      </div>
+    </div>
+</div>
+
+
+<!--row 1-->
+
+<br><br><br><br>
+
+<div class="row1"  >
+  
+
+  <div class="column2" style="padding-left: 200px; padding-right:60px;">
+    <div class="container2"> 
+        <h2 style="color: Teal;font-size: 60px;"> We believe that the “happy” service only comes from happy people. As a result, caring for employees is one of the Nabe’s core values. </h2>
+      
+      </div>
+    </div>
+
+    <div class="column2" style="padding-left: 50px; padding-right:200px;">
+    <div class="container2"> 
+        <img src="C:/Users/ThaiAnh/Desktop/coding/35.jpg" style="width: 450px;padding-bottom: 20px ">
+       
+       <h5 align="center"> (MS.) Susan </h5>
+        <p align="center">Founder of Nabe</p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+<!--row 2-->
+
+<br><br>
+
+<div class="row1"  >
+  
+
+    <div class="column2" style="padding-left: 200px; padding-right:40px;">
+    <div class="container2"> 
+        <img src="C:/Users/ThaiAnh/Desktop/coding/36.jpg" style="width: 450px;padding-bottom: 20px ">
+       
+      </div>
+    </div>
+
+    <div class="column2" style="padding-left: 40px; padding-right:40px;">
+    <div class="container2"> 
+        <img src="C:/Users/ThaiAnh/Desktop/coding/37.jpg" style="width: 450px;padding-bottom: 20px ">
+       
+      </div>
+    </div>
+
+
+        <div class="column2" style="padding-left: 40px; padding-right:200px;">
+    <div class="container2"> 
+        <img src="C:/Users/ThaiAnh/Desktop/coding/38.jpg" style="width: 450px;padding-bottom: 20px ">
+       
+      </div>
+    </div>
+
+  </div>
+
+
+<br><br>
+
+<!--row 3-->
+
+
+<div class="row1"  >
+  
+
+    <div class="column2" style="padding-left: 200px; padding-right:200px;">
+    <div class="container2"> 
+         <h2 style="color: Teal;font-size: 60px; padding-bottom: 20px;"> At the time Nabe Spa opened its doors in 2010, spa services in Vietnam lacked standardization. </h2>
+        <p style="padding-bottom: 20px">The majority of spas tended to be small operations. Many regarded working in the industry purely as a means to an end ie. only to make money rather than realize career potentials. With the development of tourism, investors saw the spa industry just as a profitable business opportunity and little more. Nabe's intention at the start was to provide the Elegance Hospitality Group’s (EHG) hotel guests with a wonderfully convenient service. The in-house spa service forms part of EHG’s impeccable offering. As a member of this hospitality group, the spa was driven not by revenue and profit but the ambition to provide an exceptional wellness service exceeding every guest’s expectations. Rather than divert energies to marketing and advertising gimmicks, the spa’s management team focuses on improving processes, perfecting the service, refining every detail, investing in training, employee development and human resources. A happy, motivated and passionate team of people is what results in the best service experience. Therefore, caring for every member of staff is one of Nabe Spa’s brand values and priorities.  </p>
+         <p style="padding-bottom: 70px">Gradually, the La Siesta Spa operation outgrew its positioning as an in-house hotel guest spa.  The number of customers from outside EHG not staying at any EHG property was rapidly increasing. Even though by then end of 2017 the group had five spa branches across five properties bringing spa facilities to the doorstep of a greater number of guests, more than half of the 3,600 spa customers for that year were outside EHG – a percentage share that is still rising. </p>
+
+
+       
+      </div>
+    </div>
+</div>
+
+<!-- footer -->
+
+<div class="footer" >
+
+
+   <!-- first row -->
+
+      <div class="col" style="text-align: left;padding-left: 5%;"> <!-- first column -->
+      <h2>NABE </h2>
+    <p> 27 Hang Be, Hang Bac, Hoan Kiem, Hanoi, Vietnam</p>
+    <p> No. 10 Nguyen Quang Bich street, Old Quarter, Hanoi , Vietnam</p>  
+    <p>Tel: +084 24 3929 0011</p> 
+    <p>Email: info@laspas.vn</p>
+        </div>
+
+          
+
+  
+  <div class="col" style="text-align:left;padding-right: 0%; "> <!-- second col -->
+
+
+    <div class="icon-bar">
+    <a href="https://www.facebook.com/stromspa/" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.youtube.com/user/StromSpaNordique/" class="youtube"><i class="fa fa-youtube"></i></a>
+  </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- input form -->
+      <form class="form-inline" action="/action_page.php" style="margin-top: 20px;">
+      <input class="form-control mr-sm-2" type="text" placeholder="Emails">
+      <button class="btn btn-success" type="submit" style="background-color: #006666; color: white;">SUBSCRIBE</button>
+    </form>
+
+
+  <p style="text-align: down;margin-top: 50px; font-size: 12px;">Discalimer: This website has been done as a part of Assignment, this company does not exist</p>
+
+
+
+  </div>
+
+
+</div>
+
+</body>
+
+</html>
